@@ -1,0 +1,42 @@
+NOTICE — attribution and provenance
+===================================
+
+The mathematical content verified here is not ours.
+
+Certificate data
+----------------
+  upstream-data/S8_n5372.txt
+    An eight-coloring of 1..5372 with no monochromatic x + y = z (x = y
+    allowed), i.e. a witness for S(8) >= 5372. Taken verbatim from the
+    arXiv ancillary files of:
+
+      Zhiyang Chen, Ligeng Zhu, Fan Long,
+      "A new lower bound for the sixth Schur number: S(6) >= 537",
+      arXiv:2610.31362  https://arxiv.org/abs/2610.31362
+
+    Author repository: https://github.com/jeffchen006/Schur-Number-6
+    SHA-256 of S8_n5372.txt as published in the authors' SHA256SUMS:
+      d0abd71d8de5749bcd12c6bbbb909033a3f8baa17a624364751669b6cb586d24
+    (verified on download; see upstream-data/SHA256SUMS for the full table).
+
+    Per the authors, this coloring is obtained from their S(6) >= 537
+    partition (certificate.col, also in upstream-data/) via the width-10
+    template of Bengone et al.; their check.py re-derives and checks it.
+
+  upstream-data/certificate.col and upstream-data/check.py are likewise the
+  authors' ancillary files, redistributed here so the provenance chain is
+  self-contained.
+
+Trusted statement
+-----------------
+  SchurNumber8/LeapsInBounds/Statements/Schur.lean
+    Vendored unmodified from daniel-munro/leaps-in-bounds
+    (commit 790ab900172c0c488db3124e89d6acbb80f8144f), MIT License
+    (c) 2025 Daniel Munro. This file defines what every certificate here
+    means (LeapsInBounds.Schur.LowerBound) and is treated as trusted.
+
+Original work in this repository
+--------------------------------
+  SchurNumber8/LeapsInBounds/Proofs/Schur8Lower5372.lean
+    The Lean proof bridging the Chen-Zhu-Long certificate to the trusted
+    statement, plus scripts/. MIT licensed like the rest of this repo.

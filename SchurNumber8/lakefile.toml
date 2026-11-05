@@ -1,0 +1,17 @@
+name = "SchurNumber8"
+version = "0.1.0"
+defaultTargets = ["LeapsInBounds"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+
+# Pins mirror daniel-munro/leaps-in-bounds formal/ (toolchain + Mathlib tag).
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "LeapsInBounds"
+globs = ["LeapsInBounds", "LeapsInBounds.+"]
