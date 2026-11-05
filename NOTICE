@@ -5,7 +5,7 @@ The mathematical content verified here is not ours.
 
 Certificate data
 ----------------
-  upstream-data/S8_n5372.txt
+  upstream-data/data/S8_n5372.txt
     An eight-coloring of 1..5372 with no monochromatic x + y = z (x = y
     allowed), i.e. a witness for S(8) >= 5372. Taken verbatim from the
     arXiv ancillary files of:
@@ -17,7 +17,8 @@ Certificate data
     Author repository: https://github.com/jeffchen006/Schur-Number-6
     SHA-256 of S8_n5372.txt as published in the authors' SHA256SUMS:
       d0abd71d8de5749bcd12c6bbbb909033a3f8baa17a624364751669b6cb586d24
-    (verified on download; see upstream-data/SHA256SUMS for the full table).
+    (verified on download; present as `data/S8_n5372.txt` in upstream-data/SHA256SUMS; the
+    SHA256SUMS file itself is redistributed verbatim).
 
     Per the authors, this coloring is obtained from their S(6) >= 537
     partition (certificate.col, also in upstream-data/) via the width-10

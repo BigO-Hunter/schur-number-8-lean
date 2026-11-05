@@ -32,8 +32,10 @@ this repo only adds the Lean verification.**
 ```
 NOTICE                      attribution and provenance (read this first)
 upstream-data/              arXiv:2610.31362 ancillary files, verbatim:
-                            S8_n5372.txt (the certificate), certificate.col,
-                            check.py (authors' checker), SHA256SUMS
+                            data/S8_n5372.txt (the certificate), certificate.col,
+                            solutions537.txt, check.py (authors' checker;
+                            `cd upstream-data && python3 check.py` passes),
+                            SHA256SUMS
 SchurNumber8/               standalone Lake package
   LeapsInBounds/Statements/Schur.lean       trusted statement (vendored)
   LeapsInBounds/Proofs/Schur8Lower5372.lean  the proof
@@ -66,7 +68,7 @@ depends on axioms: [propext, Classical.choice, Quot.sound]
 `Schur8Lower5372.lean` (291 lines, most of it data):
 
 1. `cert : List (Fin 8)` — the 5372 colors, generated from
-   `upstream-data/S8_n5372.txt` by `scripts/gen_lean.py` (colors re-indexed
+   `upstream-data/data/S8_n5372.txt` by `scripts/gen_lean.py` (colors re-indexed
    from 1..8 to 0..7; SHA-256 in the file header).
 2. `maskOf k` — per-color bitmask, derived from `cert` *inside* Lean, so the
    data lives in exactly one place.
@@ -86,8 +88,9 @@ depends on axioms: [propext, Classical.choice, Quot.sound]
   same arXiv paper. Nothing here claims novelty for those.
 - What is new here: the **first Lean-verified** certificate for
   **S(8) ≥ 5372** (a corollary the paper itself derives via the Bengone et
-  al. width-10 template), in leaps-in-bounds' own `kind: lean` format, which
-  previously had no Schur proofs at all.
+  al. width-10 template), contributed as a `kind: lean` certificate to
+  leaps-in-bounds, which previously had no Lean Schur proofs.
+  PR: https://github.com/daniel-munro/leaps-in-bounds/pull/1
 
 ## License
 

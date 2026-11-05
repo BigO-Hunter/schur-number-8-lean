@@ -12,7 +12,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SRC = ROOT / "upstream-data" / "S8_n5372.txt"
+SRC = ROOT / "upstream-data" / "data" / "S8_n5372.txt"
 TARGET = ROOT / "SchurNumber8" / "LeapsInBounds" / "Proofs" / "Schur8Lower5372.lean"
 N = 5372
 K = 8

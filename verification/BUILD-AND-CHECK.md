@@ -10,11 +10,13 @@ Machine: macOS arm64 (Apple Silicon), Lean via elan.
 
 ## Certificate provenance
 
-- `upstream-data/S8_n5372.txt` downloaded from
+- `upstream-data/data/S8_n5372.txt` downloaded from
   `https://arxiv.org/src/2610.31362v1/anc/data/S8_n5372.txt`
 - SHA-256: `d0abd71d8de5749bcd12c6bbbb909033a3f8baa17a624364751669b6cb586d24`
-- Matches line `data/S8_n5372.txt` in the authors' `SHA256SUMS` (also from the
-  arXiv anc directory, `upstream-data/SHA256SUMS`).
+- Path and hash match line `data/S8_n5372.txt` in the authors' `SHA256SUMS`
+  (redistributed verbatim as `upstream-data/SHA256SUMS`). `solutions537.txt`
+  (hash also verified) was added so the authors' full checker runs:
+  `cd upstream-data && python3 check.py` → "all checks passed".
 - The authors' own checker (`upstream-data/check.py`) asserts this file equals
   the coloring their S(6) template construction produces, and that every class
   is sum-free.

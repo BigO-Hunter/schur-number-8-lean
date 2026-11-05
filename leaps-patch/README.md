@@ -1,11 +1,12 @@
-# leaps-in-bounds contribution package (prepared, not submitted)
+# leaps-in-bounds contribution package
 
-This directory contains everything needed to add `S(8) ≥ 5372` to
-[daniel-munro/leaps-in-bounds](https://github.com/daniel-munro/leaps-in-bounds)
-as a `kind: lean` certificate — **held for the ASK FIRST route request**
-(bigospeedrun/verifier issue) before anything is opened upstream.
+This directory contains the contribution prepared for
+[daniel-munro/leaps-in-bounds](https://github.com/daniel-munro/leaps-in-bounds),
+which owns Schur-number evidence review. Schur evidence belongs there, not on
+a separate BigO board — see the redirect note on
+bigospeedrun/verifier#153.
 
-## Files
+## Files (all three are part of the contribution)
 
 - `certificates/schur/schur-8-lower-5372.yml` — drop into `certificates/schur/`.
   Constant `schur-8` is already a valid constant there (k ranges 1..9) and
@@ -19,16 +20,14 @@ as a `kind: lean` certificate — **held for the ASK FIRST route request**
   `formal/LeapsInBounds/Proofs/`. Byte-identical to
   `SchurNumber8/LeapsInBounds/Proofs/Schur8Lower5372.lean` in this repo.
   The module name is under their trusted `LeapsInBounds.Proofs.*` prefix and
-  imports only their `LeapsInBounds.Statements.Schur`.
+  imports only their existing trusted `LeapsInBounds.Statements.Schur` — the
+  statement file itself is NOT part of the contribution.
 
 ## Verification already run against leaps-in-bounds @ 790ab900172c0c488db3124e89d6acbb80f8144f
 
 - `python scripts/check_certificates.py --lean --no-build` with this yml added:
-  **737/737 certificates ok** (was 736/736 before, with 461 Lean proofs
-  skipped → 462 checked; their kernel replay + axiom walk accepted the new
-  module).
-- Their checker's allowlist is exactly `[propext, Classical.choice,
-  Quot.sound]`; the theorem's `#print axioms` is exactly that list.
+  **737/737 certificates ok** (their kernel replay + axiom walk accepted the
+  new module; allowlist is exactly `propext, Classical.choice, Quot.sound`).
 
 ## Apply
 
