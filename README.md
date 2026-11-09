@@ -97,3 +97,16 @@ depends on axioms: [propext, Classical.choice, Quot.sound]
 MIT for this repo's original content; the vendored statement file and the
 redistributed arXiv ancillary files remain the work of their authors (see
 NOTICE).
+
+---
+
+## Why this repo is up
+
+Reproducible verified bounds: a kernel-only checker for the published S(8) ≥ 5372 certificate — anyone can recheck the arXiv ancillary claim without trusting it.
+
+[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
+
+## What work can be done here
+
+The checker is complete. Open work: independent reruns of the kernel-only check; S(9) and beyond need new certificates, not reruns.
+
