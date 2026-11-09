@@ -94,7 +94,7 @@ depends on axioms: [propext, Classical.choice, Quot.sound]
 
 ## License
 
-MIT for this repo's original content; the vendored statement file and the
+Licensed under the CFSF License — see [LICENSE](LICENSE) ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)) for this repo's original content; the vendored statement file and the
 redistributed arXiv ancillary files remain the work of their authors (see
 NOTICE).
 
