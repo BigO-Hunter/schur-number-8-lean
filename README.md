@@ -85,7 +85,7 @@ depends on axioms: [propext, Classical.choice, Quot.sound]
 
 - S(6) ≥ 537 and S(7) ≥ 1696 were already carried by leaps-in-bounds as
   Python-checked witness certificates (`kind: witness`); S(6) is from the
-  same arXiv paper. Nothing here claims novelty for those.
+  same arXiv paper.
 - What is new here: the **first Lean-verified** certificate for
   **S(8) ≥ 5372** (a corollary the paper itself derives via the Bengone et
   al. width-10 template), contributed as a `kind: lean` certificate to
@@ -100,13 +100,10 @@ NOTICE).
 
 ---
 
-## Why this repo is up
-
-Reproducible verified bounds: a kernel-only checker for the published S(8) ≥ 5372 certificate — anyone can recheck the arXiv ancillary claim without trusting it.
-
-[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
-
 ## What work can be done here
 
 The checker is complete. Open work: independent reruns of the kernel-only check; S(9) and beyond need new certificates, not reruns.
 
+---
+
+[BigO-Hunter](https://github.com/BigO-Hunter) — tracking & packaging org for [Big O Speedrun](https://bigospeedrun.com) contributions · [org profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io)
