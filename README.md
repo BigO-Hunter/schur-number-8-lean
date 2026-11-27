@@ -50,7 +50,7 @@ verification/               captured build/check/axiom output
 ## Build
 
 ```bash
-git clone https://github.com/darkhipo/schur-number-8-lean
+git clone https://github.com/BigO-Hunter/schur-number-8-lean
 cd schur-number-8-lean/SchurNumber8
 lake exe cache get   # fetches Mathlib oleans (~2 GB, mostly cache hits)
 lake build           # ~20 s after cache; prints the #print axioms line
